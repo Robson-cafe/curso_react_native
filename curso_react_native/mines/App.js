@@ -13,7 +13,6 @@ export default class App extends Component {
     );
   }
 }
-
 const styles = StyleSheet.create({
   conteiner: {
     flex: 1,
