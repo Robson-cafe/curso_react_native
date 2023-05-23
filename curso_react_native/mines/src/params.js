@@ -1,5 +1,5 @@
-import { Dimensions } from 'react-native'
 
+import { Dimensions } from 'react-native';
 const params = {
     blockSize: 30,
     borderSize: 5,
@@ -10,7 +10,8 @@ const params = {
         const width = Dimensions.get('window').width
         return Math.floor(width / this.blockSize)
     },
-    getRowsAmount () {
+
+    getRowsAmount() {
         const totalHeight = Dimensions.get('window').height
         const boardHeight = totalHeight * (1 - this.headerRatio)
         return Math.floor(boardHeight / this.blockSize)
