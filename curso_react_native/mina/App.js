@@ -10,6 +10,7 @@ export default class App extends Component {
       <View style={styles.conteiner}>
         <Text style={styles.welcome}>Iniciando o Mines!</Text>
         <Text>Tamanho da grade: {params.getRowsAmount()}x{params.getColumnsAmount()}</Text>
+
         <Field />
         <Field opened />
         <Field opened nearMines={1}/>  
@@ -17,8 +18,10 @@ export default class App extends Component {
         <Field opened nearMines={3}/>  
         <Field opened nearMines={6}/>  
         <Field mined />  
-        <Field mined opened/>  
-        <Field mined opened explode/>  
+        <Field mined opened />  
+        <Field mined opened explode />
+        <Field flagged />
+        <Field flagged opened />
       </View>
     );
   }
